@@ -534,15 +534,6 @@
                                             <action selector="SignupWithFb:" destination="fT5-X1-Lyx" eventType="touchUpInside" id="qzQ-V4-P1S"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDa-gQ-KK2">
-                                        <rect key="frame" x="8" y="500" width="359" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.23961900680000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="test">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.2147099743150685" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -565,7 +556,7 @@
         <scene sceneID="edv-Ak-zCD">
             <objects>
                 <viewController id="wct-ub-JGV" customClass="SignupViewController" customModule="VapAlpha" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dBu-Wg-qTH">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dBu-Wg-qTH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -672,7 +663,6 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="cTr-lu-rxa"/>
                     </view>
                     <connections>
                         <outlet property="emailField" destination="rtu-17-K0l" id="798-TX-Hiq"/>
@@ -980,7 +970,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ak-wJ-9fZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1612" y="-594"/>
+            <point key="canvasLocation" x="-1612" y="-594.0886699507389"/>
         </scene>
     </scenes>
     <resources>

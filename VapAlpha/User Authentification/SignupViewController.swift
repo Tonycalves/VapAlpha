@@ -24,6 +24,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setGestureRecognizersToDismissKeyboard()
         
         continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         continueButton.setTitleColor(secondaryColor, for: .normal)
@@ -179,14 +180,15 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         switch textField {
         case usernameField:
             usernameField.resignFirstResponder()
-            emailField.becomeFirstResponder()
+            //emailField.becomeFirstResponder()
             break
         case emailField:
             emailField.resignFirstResponder()
-            passwordField.becomeFirstResponder()
+            //passwordField.becomeFirstResponder()
             break
         case passwordField:
-            handleSignUp()
+            passwordField.resignFirstResponder()
+            //handleSignUp()
             break
         default:
             break
@@ -231,5 +233,51 @@ extension SignupViewController: UIImagePickerControllerDelegate, UINavigationCon
             self.profileImageView.image = pickedImage
         }
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    ///////////////////////////////Hide Keyboard//////////////////////////////////////
+    
+    @IBAction func unwindToLogin(storyboard: UIStoryboardSegue){}
+    
+    // Dismissing the Keyboard with the Return Keyboard Button
+    @objc func dismissKeyboard(gesture: UIGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
+    func setGestureRecognizersToDismissKeyboard(){
+        
+        // Creating Tap Gesture to dismiss Keyboard
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignupViewController.dismissKeyboard(gesture:)))
+        tapGesture.numberOfTapsRequired = 1
+        view.addGestureRecognizer(tapGesture)
+        
+        // Creating Swipe Gesture to dismiss Keyboard
+        let swipDown = UISwipeGestureRecognizer(target: self, action: #selector(SignupViewController.dismissKeyboard(gesture:)))
+        swipDown.direction = .down
+        view.addGestureRecognizer(swipDown)
+    }
+    
+    // Moving the View down after the Keyboard appears
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateView(up: true, moveValue: 45)
+    }
+    
+    // Moving the View down after the Keyboard disappears
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        animateView(up: false, moveValue: 45)
+    }
+    
+    
+    // Move the View Up & Down when the Keyboard appears
+    func animateView(up: Bool, moveValue: CGFloat){
+        
+        let movementDuration: TimeInterval = 0.3
+        let movement: CGFloat = (up ? -moveValue : moveValue)
+        UIView.beginAnimations("animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        UIView.commitAnimations()
     }
 }
