@@ -14,30 +14,27 @@ import FirebaseStorage
 
 class FourthViewController: UIViewController {
 
+    @IBOutlet weak var logOutButton: UIButton! {
+        didSet {
+            logOutButton.layer.cornerRadius = 15
+            logOutButton.layer.borderWidth = 1
+        }
+    }
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     
     @IBOutlet weak var imageViewTest: UIImageView!
     
-//    let profileImageViewHeight: CGFloat = 90
-//    lazy var profileImageView: CachedImageView = {
-//        var iv = CachedImageView()
-//        iv.backgroundColor = Service.baseColor
-//        iv.contentMode = .scaleAspectFill
-//        iv.layer.cornerRadius = profileImageViewHeight / 2
-//        iv.clipsToBounds = true
-//        return iv
-//    }()
-    
     @IBAction func handleLogout(_ sender: Any) {
-        let signOutAction = UIAlertAction(title: "LogOut", style: .destructive) { (action) in
+        let signOutAction = UIAlertAction(title: "Déconnexion", style: .destructive) { (action) in
             do {
                 try FIRAuth.auth()?.signOut()
                 self.dismiss(animated: true, completion: nil)
             } catch let err {
                 print("Failed to sign ou with error", err)
-                Service.showAlert(on: self, style: .alert, title: "Sign Out Error", message: err.localizedDescription)
+                Service.showAlert(on: self, style: .alert, title: "Erreur de déconnexion", message: err.localizedDescription)
             }
+                
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         Service.showAlert(on: self, style: .actionSheet, title: nil, message: nil, actions: [signOutAction, cancelAction], completion: nil)
@@ -64,7 +61,6 @@ class FourthViewController: UIViewController {
                 
                 self.usernameLabel.text = user.name
                 self.emailLabel.text = user.email
-                //self.profileImageView.loadImage(urlString: user.profileImageUrl)
             
                 let imageURL = user.profileImageUrl
                 
@@ -93,12 +89,6 @@ class FourthViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-//    fileprivate func setupView() {
-//        view.addSubview(profileImageView)
-//
-//        profileImageView.anchor(view.safeAreaLayoutGuide.topAnchor, left: view.safeAreaLayoutGuide.leftAnchor, bottom: nil, right: nil, topConstant: 100, leftConstant: 145, bottomConstant: 0, rightConstant: 16, widthConstant: profileImageViewHeight, heightConstant: profileImageViewHeight)
-//    }
     
     
     

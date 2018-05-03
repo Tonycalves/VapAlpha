@@ -53,7 +53,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //emailField.becomeFirstResponder()
         NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     }
     
@@ -96,7 +95,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             break
         case passwordField:
             passwordField.resignFirstResponder()
-            //handleSignIn()
             break
         default:
             break
@@ -180,7 +178,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         animateView(up: false, moveValue: 45)
     }
-    
     
     // Move the View Up & Down when the Keyboard appears
     func animateView(up: Bool, moveValue: CGFloat){

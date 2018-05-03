@@ -126,7 +126,7 @@ class WelcomeViewController: UIViewController {
         let fileName = UUID().uuidString
         guard let profilePicture = self.profilePicture else { return }
         guard let uploadData = UIImageJPEGRepresentation(profilePicture, 0.3) else { return }
-        FIRStorage.storage().reference().child("profileImages").child(fileName).put(uploadData, metadata: nil) { (metadata, err) in
+        FIRStorage.storage().reference().child("user").child(fileName).put(uploadData, metadata: nil) { (metadata, err) in
             if let err = err {
                 print(err)
                 return

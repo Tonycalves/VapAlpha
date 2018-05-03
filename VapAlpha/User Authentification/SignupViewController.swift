@@ -11,7 +11,7 @@ import Firebase
 import Foundation
 
 class SignupViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -118,7 +118,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                         if error == nil {
                             print("User Display name Changed!")
                             
-                            self.saveProfile(username: username, profileImageURL: url!) { success in
+                            self.saveProfile(username: username,email: email, profileImageURL: url!) { success in
                                 if success {
                                     self.dismiss(animated: true, completion: nil)
                                 } else {
@@ -172,7 +172,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         // Resigns the target textField and assigns the next textField in the form.
@@ -180,15 +180,12 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         switch textField {
         case usernameField:
             usernameField.resignFirstResponder()
-            //emailField.becomeFirstResponder()
             break
         case emailField:
             emailField.resignFirstResponder()
-            //passwordField.becomeFirstResponder()
             break
         case passwordField:
             passwordField.resignFirstResponder()
-            //handleSignUp()
             break
         default:
             break
@@ -206,13 +203,14 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func saveProfile(username:String, profileImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
+    func saveProfile(username:String, email:String, profileImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
         guard let uid = FIRAuth.auth()?.currentUser?.uid else { return }
-        let databaseRef = FIRDatabase.database().reference().child("users/profile/\(uid)")
+        let databaseRef = FIRDatabase.database().reference().child("users/\(uid)")
         
         let userObject = [
-            "username": username,
-            "photoURL": profileImageURL.absoluteString
+            "name": username,
+            "email": email,
+            "profileImageUrl": profileImageURL.absoluteString
             ] as [String:Any]
         
         databaseRef.setValue(userObject) { error, ref in

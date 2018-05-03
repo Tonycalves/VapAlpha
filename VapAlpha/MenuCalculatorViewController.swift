@@ -11,6 +11,18 @@ import Firebase
 
 class MenuCalculatorViewController: UIViewController {
     
+    @IBOutlet weak var calculatorWithoutNicotine: UIButton! {
+        didSet {
+            calculatorWithoutNicotine.layer.cornerRadius = 15
+            calculatorWithoutNicotine.layer.borderWidth = 1
+        }
+    }
+    @IBOutlet weak var calculatorwithnicotine: UIButton! {
+        didSet {
+            calculatorwithnicotine.layer.cornerRadius = 15
+            calculatorwithnicotine.layer.borderWidth = 1
+        }
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
