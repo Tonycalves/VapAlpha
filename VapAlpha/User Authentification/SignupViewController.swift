@@ -12,7 +12,6 @@ import Foundation
 
 class SignupViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var tapToChangeProfileButton: UIButton!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -58,7 +57,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         profileImageView.addGestureRecognizer(imageTap)
         profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
         profileImageView.clipsToBounds = true
-        tapToChangeProfileButton.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
+        //tapToChangeProfileButton.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
         
         imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary

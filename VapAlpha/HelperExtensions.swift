@@ -54,6 +54,9 @@ extension UIView {
 }
 
 class Service {
+    
+    static let baseColor = UIColor(r: 255, g: 255, b: 255)
+    
     static func showAlert(on: UIViewController, style: UIAlertControllerStyle, title: String?, message: String?, actions: [UIAlertAction] = [UIAlertAction(title: "Ok", style: .default, handler: nil)], completion: (() -> Swift.Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         for action in actions {

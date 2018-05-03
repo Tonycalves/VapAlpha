@@ -156,21 +156,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackground" translatesAutoresizingMaskIntoConstraints="NO" id="OsJ-za-6c2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="settingbackground" translatesAutoresizingMaskIntoConstraints="NO" id="OsJ-za-6c2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ooy-as-VMr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59118150684931503" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="7oq-iD-rod">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paramètres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjE-q2-YEV">
-                                <rect key="frame" x="50" y="61" width="275" height="71"/>
+                                <rect key="frame" x="50" y="44" width="275" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="47"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="shadowColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="3" height="6"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVy-Ts-ukh">
-                                <rect key="frame" x="16" y="646" width="343" height="62"/>
+                                <rect key="frame" x="16" y="659" width="343" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.82798619923857864" green="0.23252520920185218" blue="0.13919248604978474" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -181,11 +191,34 @@
                                     <action selector="handleLogout:" destination="jUq-fS-K5i" eventType="touchUpInside" id="Rbv-5k-4C6"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1N-0v-efr">
+                                <rect key="frame" x="132" y="157" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqm-Cj-LpL">
+                                <rect key="frame" x="50" y="330" width="275" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f58-zk-cLM">
+                                <rect key="frame" x="50" y="291" width="275" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wBC-iK-dKO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Paramètres" image="first" id="Fqq-ft-2Ms"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="Aqm-Cj-LpL" id="WTr-YY-rUN"/>
+                        <outlet property="imageViewTest" destination="y1N-0v-efr" id="5Eh-Vd-oYY"/>
+                        <outlet property="usernameLabel" destination="f58-zk-cLM" id="fc5-eR-N2o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eH5-dg-pJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -501,8 +534,8 @@
                                             <action selector="SignupWithFb:" destination="fT5-X1-Lyx" eventType="touchUpInside" id="qzQ-V4-P1S"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duK-Xe-NnL">
-                                        <rect key="frame" x="8" y="506" width="359" height="44"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDa-gQ-KK2">
+                                        <rect key="frame" x="8" y="500" width="359" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.23961900680000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -518,6 +551,9 @@
                         <viewLayoutGuide key="safeArea" id="rrd-ip-iyP"/>
                     </view>
                     <connections>
+                        <outlet property="createAccountButton" destination="uRX-kT-JlG" id="acF-5g-G69"/>
+                        <outlet property="loginButton" destination="kkw-7S-JyK" id="1IK-27-PZj"/>
+                        <outlet property="signInWithFacebook" destination="G3R-Et-2st" id="8ve-mT-uNV"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="toHomeScreen" id="yCQ-z8-08T"/>
                     </connections>
                 </viewController>
@@ -553,7 +589,7 @@
                                         <rect key="frame" x="34" y="121" width="306" height="409"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-male-user-filled-50" translatesAutoresizingMaskIntoConstraints="NO" id="cVi-UA-797">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePictureWhite" translatesAutoresizingMaskIntoConstraints="NO" id="cVi-UA-797">
                                                 <rect key="frame" x="123" y="33" width="64" height="64"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -621,17 +657,13 @@
                                                 <color key="textColor" red="0.98526549528780472" green="1" blue="0.95619846809572473" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSG-Xj-q8X">
-                                                <rect key="frame" x="66" y="105" width="175" height="33"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cliquez pour changer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-vc-pvd">
+                                                <rect key="frame" x="58" y="105" width="195" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <state key="normal" title="Cliquez pour changer">
-                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="tapToChangeProfileButton:" destination="wct-ub-JGV" eventType="touchUpInside" id="7cF-Te-dDs"/>
-                                                </connections>
-                                            </button>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -646,13 +678,12 @@
                         <outlet property="emailField" destination="rtu-17-K0l" id="798-TX-Hiq"/>
                         <outlet property="passwordField" destination="roj-vc-Msf" id="9X4-H0-PPf"/>
                         <outlet property="profileImageView" destination="cVi-UA-797" id="Mf1-jO-9Yo"/>
-                        <outlet property="tapToChangeProfileButton" destination="rSG-Xj-q8X" id="0IH-WS-meq"/>
                         <outlet property="usernameField" destination="nnu-QB-511" id="8pT-Kg-BAR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFN-gA-Cl9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1612" y="-1266"/>
+            <point key="canvasLocation" x="-1612" y="-1266.5024630541873"/>
         </scene>
         <!--Calculateur-->
         <scene sceneID="8qW-dN-7CF">
@@ -958,9 +989,11 @@
         <image name="blackcoussin" width="1242" height="2208"/>
         <image name="blackground" width="576" height="1024"/>
         <image name="first" width="30" height="30"/>
+        <image name="header" width="600" height="400"/>
         <image name="icons8-Back Filled_50" width="33" height="33"/>
-        <image name="icons8-male-user-filled-50" width="100" height="100"/>
+        <image name="profilePictureWhite" width="100" height="100"/>
         <image name="second" width="30" height="30"/>
+        <image name="settingbackground" width="640" height="1136"/>
         <image name="tdmsmoke" width="1080" height="1920"/>
     </resources>
 </document>

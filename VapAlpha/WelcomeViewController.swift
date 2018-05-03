@@ -19,9 +19,29 @@ import SwiftyJSON
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton! {
+        didSet {
+            loginButton.layer.cornerRadius = 15
+            loginButton.layer.borderWidth = 1
+        }
+    }
+    @IBOutlet weak var createAccountButton: UIButton! {
+        didSet {
+            createAccountButton.layer.cornerRadius = 15
+            createAccountButton.layer.borderWidth = 1
+        }
+    }
+    @IBOutlet weak var signInWithFacebook: UIButton! {
+        didSet {
+            signInWithFacebook.layer.cornerRadius = 15
+            signInWithFacebook.layer.borderWidth = 1
+        }
+    }
+    
+    
     var name: String?
     var email: String?
-    var profilePicture: UIImage?
+    var profilePicture: UIImage? = #imageLiteral(resourceName: "profilePictureWhite")
     
     let hud: JGProgressHUD = {
         let hud = JGProgressHUD(style: .light)
@@ -118,7 +138,7 @@ class WelcomeViewController: UIViewController {
             
             let dictionaryValues = ["name": self.name,
                                     "email": self.email,
-                                    "profilePictureUrl": profilePictureUrl]
+                                    "profileImageUrl": profilePictureUrl]
             
             let values = [uid: dictionaryValues]
             

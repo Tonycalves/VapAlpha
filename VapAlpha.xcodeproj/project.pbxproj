@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		182B0BF2DDA4654ADE479A56 /* Pods_VapAlpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903603FB72698E29B2A47CE5 /* Pods_VapAlpha.framework */; };
+		583622BB209B2B8200C8F864 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583622BA209B2B8200C8F864 /* CurrentUser.swift */; };
 		584D636520835ED200DA60A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D636420835ED200DA60A7 /* AppDelegate.swift */; };
 		584D636720835ED200DA60A7 /* Calculator1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D636620835ED200DA60A7 /* Calculator1ViewController.swift */; };
 		584D636920835ED200DA60A7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D636820835ED200DA60A7 /* SecondViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		19F1FF2359E112181C581E1E /* Pods-VapAlpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VapAlpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VapAlpha/Pods-VapAlpha.debug.xcconfig"; sourceTree = "<group>"; };
+		583622BA209B2B8200C8F864 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		584D636120835ED200DA60A7 /* VapAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VapAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		584D636420835ED200DA60A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		584D636620835ED200DA60A7 /* Calculator1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator1ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				58F2018420930A7A002299D0 /* RoundedWhiteButton.swift */,
 				58F2018620930C50002299D0 /* HelperExtensions.swift */,
 				58F2018820931311002299D0 /* WelcomeViewController.swift */,
+				583622BA209B2B8200C8F864 /* CurrentUser.swift */,
 			);
 			path = VapAlpha;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				58F2018720930C50002299D0 /* HelperExtensions.swift in Sources */,
 				584D636720835ED200DA60A7 /* Calculator1ViewController.swift in Sources */,
 				584D637B20835F9400DA60A7 /* FourthViewController.swift in Sources */,
+				583622BB209B2B8200C8F864 /* CurrentUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
