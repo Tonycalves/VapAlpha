@@ -69,7 +69,6 @@
 		584D635820835ED200DA60A7 = {
 			isa = PBXGroup;
 			children = (
-				587E17422091FE3400C2E5AF /* GoogleService-Info.plist */,
 				587E17442091FF9700C2E5AF /* Podfile */,
 				584D636320835ED200DA60A7 /* VapAlpha */,
 				584D636220835ED200DA60A7 /* Products */,
@@ -101,6 +100,7 @@
 				584D636D20835ED300DA60A7 /* Assets.xcassets */,
 				584D636F20835ED300DA60A7 /* LaunchScreen.storyboard */,
 				584D637220835ED300DA60A7 /* Info.plist */,
+				587E17422091FE3400C2E5AF /* GoogleService-Info.plist */,
 				58F2018420930A7A002299D0 /* RoundedWhiteButton.swift */,
 				58F2018620930C50002299D0 /* HelperExtensions.swift */,
 				58F2018820931311002299D0 /* WelcomeViewController.swift */,
@@ -428,7 +428,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VDLNGJ54Z;
 				INFOPLIST_FILE = VapAlpha/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alphadev.VapAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -446,7 +449,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VDLNGJ54Z;
 				INFOPLIST_FILE = VapAlpha/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alphadev.VapAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
