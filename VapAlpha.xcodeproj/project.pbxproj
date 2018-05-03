@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182B0BF2DDA4654ADE479A56 /* Pods_VapAlpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903603FB72698E29B2A47CE5 /* Pods_VapAlpha.framework */; };
 		584D636520835ED200DA60A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D636420835ED200DA60A7 /* AppDelegate.swift */; };
-		584D636720835ED200DA60A7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D636620835ED200DA60A7 /* FirstViewController.swift */; };
+		584D636720835ED200DA60A7 /* Calculator1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D636620835ED200DA60A7 /* Calculator1ViewController.swift */; };
 		584D636920835ED200DA60A7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D636820835ED200DA60A7 /* SecondViewController.swift */; };
 		584D636C20835ED200DA60A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584D636A20835ED200DA60A7 /* Main.storyboard */; };
 		584D636E20835ED300DA60A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584D636D20835ED300DA60A7 /* Assets.xcassets */; };
 		584D637120835ED300DA60A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584D636F20835ED300DA60A7 /* LaunchScreen.storyboard */; };
+		584D637920835EF500DA60A7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D637820835EF500DA60A7 /* ThirdViewController.swift */; };
+		584D637B20835F9400DA60A7 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D637A20835F9400DA60A7 /* FourthViewController.swift */; };
+		587E17432091FE3400C2E5AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 587E17422091FE3400C2E5AF /* GoogleService-Info.plist */; };
+		587E17452091FF9700C2E5AF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 587E17442091FF9700C2E5AF /* Podfile */; };
+		5895459F208FDDD600A62D01 /* MenuCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5895459E208FDDD600A62D01 /* MenuCalculatorViewController.swift */; };
+		589545A1208FE2A000A62D01 /* Calculator2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589545A0208FE2A000A62D01 /* Calculator2ViewController.swift */; };
+		58F2018320930850002299D0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2018220930850002299D0 /* SignupViewController.swift */; };
+		58F2018520930A7A002299D0 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2018420930A7A002299D0 /* RoundedWhiteButton.swift */; };
+		58F2018720930C50002299D0 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2018620930C50002299D0 /* HelperExtensions.swift */; };
+		58F2018920931311002299D0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2018820931311002299D0 /* WelcomeViewController.swift */; };
+		58F2018B2093197C002299D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2018A2093197C002299D0 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19F1FF2359E112181C581E1E /* Pods-VapAlpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VapAlpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VapAlpha/Pods-VapAlpha.debug.xcconfig"; sourceTree = "<group>"; };
 		584D636120835ED200DA60A7 /* VapAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VapAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		584D636420835ED200DA60A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		584D636620835ED200DA60A7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		584D636620835ED200DA60A7 /* Calculator1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator1ViewController.swift; sourceTree = "<group>"; };
 		584D636820835ED200DA60A7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		584D636B20835ED200DA60A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		584D636D20835ED300DA60A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		584D637020835ED300DA60A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		584D637220835ED300DA60A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584D637820835EF500DA60A7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		584D637A20835F9400DA60A7 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		587E17422091FE3400C2E5AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		587E17442091FF9700C2E5AF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5895459E208FDDD600A62D01 /* MenuCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCalculatorViewController.swift; sourceTree = "<group>"; };
+		589545A0208FE2A000A62D01 /* Calculator2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator2ViewController.swift; sourceTree = "<group>"; };
+		58BF3EF520976E1900CE207A /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BF3EF720976E1F00CE207A /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F2018220930850002299D0 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		58F2018420930A7A002299D0 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
+		58F2018620930C50002299D0 /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		58F2018820931311002299D0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		58F2018A2093197C002299D0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		903603FB72698E29B2A47CE5 /* Pods_VapAlpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VapAlpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A2ED0402EB29492E3AF2E9 /* Pods-VapAlpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VapAlpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-VapAlpha/Pods-VapAlpha.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182B0BF2DDA4654ADE479A56 /* Pods_VapAlpha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +69,12 @@
 		584D635820835ED200DA60A7 = {
 			isa = PBXGroup;
 			children = (
+				587E17422091FE3400C2E5AF /* GoogleService-Info.plist */,
+				587E17442091FF9700C2E5AF /* Podfile */,
 				584D636320835ED200DA60A7 /* VapAlpha */,
 				584D636220835ED200DA60A7 /* Products */,
+				EC8AF82DBDBAAC9C7CA2C33B /* Pods */,
+				9A8D820CE49BD78025997204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +90,50 @@
 			isa = PBXGroup;
 			children = (
 				584D636420835ED200DA60A7 /* AppDelegate.swift */,
-				584D636620835ED200DA60A7 /* FirstViewController.swift */,
+				58F97BE420921BC000A8389D /* User Authentification */,
+				584D636620835ED200DA60A7 /* Calculator1ViewController.swift */,
 				584D636820835ED200DA60A7 /* SecondViewController.swift */,
+				5895459E208FDDD600A62D01 /* MenuCalculatorViewController.swift */,
+				584D637820835EF500DA60A7 /* ThirdViewController.swift */,
+				584D637A20835F9400DA60A7 /* FourthViewController.swift */,
 				584D636A20835ED200DA60A7 /* Main.storyboard */,
+				589545A0208FE2A000A62D01 /* Calculator2ViewController.swift */,
 				584D636D20835ED300DA60A7 /* Assets.xcassets */,
 				584D636F20835ED300DA60A7 /* LaunchScreen.storyboard */,
 				584D637220835ED300DA60A7 /* Info.plist */,
+				58F2018420930A7A002299D0 /* RoundedWhiteButton.swift */,
+				58F2018620930C50002299D0 /* HelperExtensions.swift */,
+				58F2018820931311002299D0 /* WelcomeViewController.swift */,
 			);
 			path = VapAlpha;
+			sourceTree = "<group>";
+		};
+		58F97BE420921BC000A8389D /* User Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				58F2018220930850002299D0 /* SignupViewController.swift */,
+				58F2018A2093197C002299D0 /* LoginViewController.swift */,
+			);
+			path = "User Authentification";
+			sourceTree = "<group>";
+		};
+		9A8D820CE49BD78025997204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58BF3EF720976E1F00CE207A /* FacebookLogin.framework */,
+				58BF3EF520976E1900CE207A /* FacebookCore.framework */,
+				903603FB72698E29B2A47CE5 /* Pods_VapAlpha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC8AF82DBDBAAC9C7CA2C33B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19F1FF2359E112181C581E1E /* Pods-VapAlpha.debug.xcconfig */,
+				90A2ED0402EB29492E3AF2E9 /* Pods-VapAlpha.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 584D637520835ED300DA60A7 /* Build configuration list for PBXNativeTarget "VapAlpha" */;
 			buildPhases = (
+				21A21699FC44BF1E57B73C8B /* [CP] Check Pods Manifest.lock */,
 				584D635D20835ED200DA60A7 /* Sources */,
 				584D635E20835ED200DA60A7 /* Frameworks */,
 				584D635F20835ED200DA60A7 /* Resources */,
+				414FF8321591A01024A42D2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +196,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587E17452091FF9700C2E5AF /* Podfile in Resources */,
 				584D637120835ED300DA60A7 /* LaunchScreen.storyboard in Resources */,
+				587E17432091FE3400C2E5AF /* GoogleService-Info.plist in Resources */,
 				584D636E20835ED300DA60A7 /* Assets.xcassets in Resources */,
 				584D636C20835ED200DA60A7 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +206,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21A21699FC44BF1E57B73C8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VapAlpha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		414FF8321591A01024A42D2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VapAlpha/Pods-VapAlpha-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/LBTAComponents/LBTAComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBTAComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VapAlpha/Pods-VapAlpha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		584D635D20835ED200DA60A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F2018B2093197C002299D0 /* LoginViewController.swift in Sources */,
 				584D636920835ED200DA60A7 /* SecondViewController.swift in Sources */,
+				589545A1208FE2A000A62D01 /* Calculator2ViewController.swift in Sources */,
+				58F2018920931311002299D0 /* WelcomeViewController.swift in Sources */,
+				58F2018520930A7A002299D0 /* RoundedWhiteButton.swift in Sources */,
+				58F2018320930850002299D0 /* SignupViewController.swift in Sources */,
+				5895459F208FDDD600A62D01 /* MenuCalculatorViewController.swift in Sources */,
 				584D636520835ED200DA60A7 /* AppDelegate.swift in Sources */,
-				584D636720835ED200DA60A7 /* FirstViewController.swift in Sources */,
+				584D637920835EF500DA60A7 /* ThirdViewController.swift in Sources */,
+				58F2018720930C50002299D0 /* HelperExtensions.swift in Sources */,
+				584D636720835ED200DA60A7 /* Calculator1ViewController.swift in Sources */,
+				584D637B20835F9400DA60A7 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,17 +421,17 @@
 		};
 		584D637620835ED300DA60A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F1FF2359E112181C581E1E /* Pods-VapAlpha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VDLNGJ54Z;
 				INFOPLIST_FILE = VapAlpha/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alphadev.VapAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,17 +439,17 @@
 		};
 		584D637720835ED300DA60A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A2ED0402EB29492E3AF2E9 /* Pods-VapAlpha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VDLNGJ54Z;
 				INFOPLIST_FILE = VapAlpha/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alphadev.VapAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
